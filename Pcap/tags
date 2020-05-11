@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AnalyzeArp	analyze.c	/^int AnalyzeArp(u_char *data,int size)$/;"	f
+AnalyzeIcmp	analyze.c	/^int AnalyzeIcmp(u_char *data,int size)$/;"	f
+AnalyzeIcmp6	analyze.c	/^int AnalyzeIcmp6(u_char *data,int size)$/;"	f
+AnalyzeIp	analyze.c	/^int AnalyzeIp(u_char *data,int size)$/;"	f
+AnalyzeIpv6	analyze.c	/^int AnalyzeIpv6(u_char *data,int size)$/;"	f
+AnalyzePacket	analyze.c	/^int AnalyzePacket(u_char *data,int size)$/;"	f
+AnalyzeTcp	analyze.c	/^int AnalyzeTcp(u_char *data,int size)$/;"	f
+AnalyzeUdp	analyze.c	/^int AnalyzeUdp(u_char *data,int size)$/;"	f
+CFLAGS	Makefile	/^CFLAGS=-g -Wall$/;"	m
+ETHERTYPE_IPV6	analyze.c	21;"	d	file:
+ETHERTYPE_IPV6	print.c	19;"	d	file:
+InitRawSocket	pcap.c	/^int InitRawSocket(char *device,int promiscFlag,int ipOnly)$/;"	f
+LDLIBS	Makefile	/^LDLIBS=$/;"	m
+OBJS	Makefile	/^OBJS=pcap.o analyze.o checksum.o print.o$/;"	m
+PrintArp	print.c	/^int PrintArp(struct ether_arp *arp,FILE *fp)$/;"	f
+PrintEtherHeader	print.c	/^int PrintEtherHeader(struct ether_header *eh,FILE *fp)$/;"	f
+PrintIcmp	print.c	/^int PrintIcmp(struct icmp *icmp,FILE *fp)$/;"	f
+PrintIcmp6	print.c	/^int PrintIcmp6(struct icmp6_hdr *icmp6,FILE *fp)$/;"	f
+PrintIp6Header	print.c	/^int PrintIp6Header(struct ip6_hdr *ip6,FILE *fp)$/;"	f
+PrintIpHeader	print.c	/^int PrintIpHeader(struct iphdr *iphdr,u_char *option,int optionLen,FILE *fp)$/;"	f
+PrintTcp	print.c	/^int PrintTcp(struct tcphdr *tcphdr,FILE *fp)$/;"	f
+PrintUdp	print.c	/^int PrintUdp(struct udphdr *udphdr,FILE *fp)$/;"	f
+Proto	print.c	/^static char     *Proto[]={$/;"	v	file:
+SRCS	Makefile	/^SRCS=$(OBJS:%.o=%.c)$/;"	m
+TARGET	Makefile	/^TARGET=pcap$/;"	m
+arp_ip2str	print.c	/^char *arp_ip2str(u_int8_t *ip,char *buf,socklen_t size)$/;"	f
+checkIP6DATAchecksum	checksum.c	/^int checkIP6DATAchecksum(struct ip6_hdr *ip,unsigned char *data,int len)$/;"	f
+checkIPDATAchecksum	checksum.c	/^int checkIPDATAchecksum(struct iphdr *iphdr,unsigned char *data,int len)$/;"	f
+checkIPchecksum	checksum.c	/^int checkIPchecksum(struct iphdr *iphdr,u_char *option,int optionLen)$/;"	f
+checksum	checksum.c	/^u_int16_t checksum(u_char *data,int len)$/;"	f
+checksum2	checksum.c	/^u_int16_t checksum2(u_char *data1,int len1,u_char *data2,int len2)$/;"	f
+dmy1	checksum.c	/^        unsigned short  dmy1;$/;"	m	struct:pseudo_ip6_hdr	file:
+dmy2	checksum.c	/^        unsigned char   dmy2;$/;"	m	struct:pseudo_ip6_hdr	file:
+dst	checksum.c	/^        struct in6_addr dst;$/;"	m	struct:pseudo_ip6_hdr	typeref:struct:pseudo_ip6_hdr::in6_addr	file:
+dummy	checksum.c	/^        unsigned char   dummy;$/;"	m	struct:pseudo_ip	file:
+ip_dst	checksum.c	/^        struct in_addr  ip_dst;$/;"	m	struct:pseudo_ip	typeref:struct:pseudo_ip::in_addr	file:
+ip_ip2str	print.c	/^char *ip_ip2str(u_int32_t ip,char *buf,socklen_t size)$/;"	f
+ip_len	checksum.c	/^        unsigned short  ip_len;$/;"	m	struct:pseudo_ip	file:
+ip_p	checksum.c	/^        unsigned char   ip_p;$/;"	m	struct:pseudo_ip	file:
+ip_src	checksum.c	/^        struct in_addr  ip_src;$/;"	m	struct:pseudo_ip	typeref:struct:pseudo_ip::in_addr	file:
+main	pcap.c	/^int main(int argc,char *argv[],char *envp[])$/;"	f
+my_ether_ntoa_r	print.c	/^char *my_ether_ntoa_r(u_char *hwaddr,char *buf,socklen_t size)$/;"	f
+nxt	checksum.c	/^        unsigned char   nxt;$/;"	m	struct:pseudo_ip6_hdr	file:
+plen	checksum.c	/^        unsigned long   plen;$/;"	m	struct:pseudo_ip6_hdr	file:
+pseudo_ip	checksum.c	/^struct pseudo_ip{$/;"	s	file:
+pseudo_ip6_hdr	checksum.c	/^struct pseudo_ip6_hdr{$/;"	s	file:
+src	checksum.c	/^        struct in6_addr src;$/;"	m	struct:pseudo_ip6_hdr	typeref:struct:pseudo_ip6_hdr::in6_addr	file:
