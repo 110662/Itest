@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALL_OR_IP	swhub.h	2;"	d
+AnalyzePacket	main.c	/^int AnalyzePacket(int devicenum, DEVICE *device,u_char *data,int size)$/;"	f
+CFLAGS	Makefile	/^CFLAGS=-g -Wall$/;"	m
+CloseRawSocket	netutil.c	/^void CloseRawSocket(DEVICE *socklist)$/;"	f
+CreateRawSocket	netutil.c	/^int CreateRawSocket(PARAM *iflist, DEVICE *socklist)$/;"	f
+DEVICE	swhub.h	/^} DEVICE;$/;"	t	typeref:struct:__anon2
+DebugOut	main.c	/^int DebugOut = 1;$/;"	v
+DebugPerror	main.c	/^int DebugPerror(char *msg)$/;"	f
+DebugPrintf	main.c	/^int DebugPrintf(char *fmt,...)$/;"	f
+Device	main.c	/^DEVICE  Device[MAXIFNUM+1];$/;"	v
+Device	swhub.h	/^    char    *Device[MAXIFNUM+1];$/;"	m	struct:__anon1
+DisableIpForward	main.c	/^int DisableIpForward()$/;"	f
+EndFlag	main.c	/^int EndFlag  = 0;$/;"	v
+EndSignal	main.c	/^void EndSignal(int sig)$/;"	f
+GetMacAddr	main.c	/^int GetMacAddr(int devicenum, struct ether_header *eh)$/;"	f
+InitRawSocket	netutil.c	/^int InitRawSocket(char *device,int promiscFlag,int ipOnly)$/;"	f
+LDLIBS	Makefile	/^LDLIBS=$/;"	m
+MAXIFNUM	swhub.h	3;"	d
+OBJS	Makefile	/^OBJS=main.o netutil.o$/;"	m
+PARAM	swhub.h	/^} PARAM;$/;"	t	typeref:struct:__anon1
+PROMISCAS_MODE	swhub.h	1;"	d
+Param	main.c	/^PARAM   Param= {"p8p1","wlp2s0","wlp0s29u1u3",NULL};$/;"	v
+PrintEtherHeader	netutil.c	/^int PrintEtherHeader(struct ether_header *eh,FILE *fp)$/;"	f
+SRCS	Makefile	/^SRCS=$(OBJS:%.o=%.c)$/;"	m
+SearchSrcMacAddr	main.c	/^int SearchSrcMacAddr(struct ether_header *eh)$/;"	f
+SwHub	main.c	/^int SwHub()$/;"	f
+TARGET	Makefile	/^TARGET=swhub$/;"	m
+dhost	swhub.h	/^    char *dhost;$/;"	m	struct:__anon2
+main	main.c	/^int main(int argc,char *argv[],char *envp[])$/;"	f
+maxfds	swhub.h	4;"	d
+my_ether_ntoa_r	netutil.c	/^char *my_ether_ntoa_r(u_char *hwaddr,char *buf,socklen_t size)$/;"	f
+shost	swhub.h	/^    char *shost;$/;"	m	struct:__anon2
+soc	swhub.h	/^    int soc;$/;"	m	struct:__anon2

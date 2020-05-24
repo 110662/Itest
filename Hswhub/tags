@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALL_OR_IP	netutil.h	5;"	d
+AnalyzePacket	main.c	/^Cell *AnalyzePacket(int devicenum, DEVICE *device, u_char *data, int size)$/;"	f
+CFLAGS	Makefile	/^CFLAGS=-g -Wall$/;"	m
+Cell	hashtable.h	/^} Cell;$/;"	t	typeref:struct:_cell_t_
+CloseRawSocket	netutil.c	/^void CloseRawSocket(DEVICE *socklist)$/;"	f
+CreateRawSocket	netutil.c	/^int CreateRawSocket(PARAM *iflist, DEVICE *socklist)$/;"	f
+DEVICE	netutil.h	/^} DEVICE;$/;"	t	typeref:struct:__anon2
+DebugOut	main.c	/^int DebugOut = 1;$/;"	v
+DebugPerror	main.c	/^int DebugPerror(char *msg)$/;"	f
+DebugPrintf	main.c	/^int DebugPrintf(char *fmt,...)$/;"	f
+Device	main.c	/^DEVICE  Device[MAXIFNUM+1];$/;"	v
+Device	netutil.h	/^    char    *Device[MAXIFNUM+1];$/;"	m	struct:__anon1
+DisableIpForward	main.c	/^int DisableIpForward()$/;"	f
+EndFlag	main.c	/^int EndFlag  = 0;$/;"	v
+EndSignal	main.c	/^void EndSignal(int sig)$/;"	f
+HashTable	hashtable.h	/^} HashTable;$/;"	t	typeref:struct:_table_t_
+InitRawSocket	netutil.c	/^int InitRawSocket(char *device,int promiscFlag,int ipOnly)$/;"	f
+LDLIBS	Makefile	/^LDLIBS=$/;"	m
+MAC_LEN	netutil.h	8;"	d
+MAXIFNUM	netutil.h	7;"	d
+OBJS	Makefile	/^OBJS=main.o netutil.o hashtable.o$/;"	m
+PARAM	netutil.h	/^} PARAM;$/;"	t	typeref:struct:__anon1
+PROMISCAS_MODE	netutil.h	4;"	d
+Param	main.c	/^PARAM   Param = {{"p8p1","wlp2s0","wlp0s29u1u3",NULL}};$/;"	v
+PrintEtherHeader	netutil.c	/^int PrintEtherHeader(struct ether_header *eh,FILE *fp)$/;"	f
+SRCS	Makefile	/^SRCS=$(OBJS:%.o=%.c)$/;"	m
+SearchDstMacAddr	main.c	/^int SearchDstMacAddr(struct ether_header *eh)$/;"	f
+SearchSrcMacAddr	main.c	/^int SearchSrcMacAddr(struct ether_header *eh)$/;"	f
+SearchSrcMacHash	main.c	/^Cell *SearchSrcMacHash(struct ether_header *eh)$/;"	f
+SetMacAddr	main.c	/^int SetMacAddr(int devicenum, struct ether_header *eh)$/;"	f
+SwHub	main.c	/^int SwHub()$/;"	f
+TABLE_SIZE	hashtable.h	6;"	d
+TARGET	Makefile	/^TARGET=hswhub$/;"	m
+VALUE_SIZE	hashtable.h	8;"	d
+_cell_t_	hashtable.h	/^typedef struct _cell_t_ {$/;"	s
+_table_t_	hashtable.h	/^typedef struct _table_t_ {$/;"	s
+dhost	netutil.h	/^    char dhost[MAC_LEN];$/;"	m	struct:__anon2
+hash_calc	hashtable.c	/^static int hash_calc(char *mac)$/;"	f	file:
+hash_delete	hashtable.c	/^int hash_delete(HashTable *ht, char *mac)$/;"	f
+hash_free_cells	hashtable.c	/^static void hash_free_cells(Cell *cell)$/;"	f	file:
+hash_get	hashtable.c	/^Cell *hash_get(HashTable *ht, char *mac)$/;"	f
+hash_get_cell	hashtable.c	/^static Cell *hash_get_cell(HashTable *ht, char *mac)$/;"	f	file:
+hash_init_table	hashtable.c	/^HashTable *hash_init_table()$/;"	f
+hash_put	hashtable.c	/^int hash_put(HashTable *ht, char *mac, char *ifname, int soc)$/;"	f
+hash_uninit_table	hashtable.c	/^int hash_uninit_table(HashTable *ht)$/;"	f
+hash_val	hashtable.h	/^    int             hash_val;$/;"	m	struct:_cell_t_
+ht	main.c	/^HashTable *ht;$/;"	v
+ifname	hashtable.h	/^    char            *ifname;$/;"	m	struct:_cell_t_
+ifname	netutil.h	/^    char *ifname;$/;"	m	struct:__anon2
+mac	hashtable.h	/^    char            mac[MAC_LEN+1];$/;"	m	struct:_cell_t_
+mac_SIZE	hashtable.h	7;"	d
+main	main.c	/^int main(int argc,char *argv[],char *envp[])$/;"	f
+maxfds	main.c	17;"	d	file:
+my_ether_ntoa_r	netutil.c	/^char *my_ether_ntoa_r(u_char *hwaddr,char *buf,socklen_t size)$/;"	f
+next	hashtable.h	/^    struct _cell_t_ *next;$/;"	m	struct:_cell_t_	typeref:struct:_cell_t_::_cell_t_
+print_table	hashtable.c	/^void print_table(HashTable *ht)$/;"	f
+shost	netutil.h	/^    char shost[MAC_LEN];$/;"	m	struct:__anon2
+soc	hashtable.h	/^    int             soc;$/;"	m	struct:_cell_t_
+soc	netutil.h	/^    int soc;$/;"	m	struct:__anon2
+table	hashtable.h	/^    Cell *table[TABLE_SIZE];$/;"	m	struct:_table_t_
